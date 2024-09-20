@@ -5,13 +5,15 @@
   width: 16px;
   height: 16px;
   margin-top: 1px;
-  color: var(--font-color);
+  stroke: var(--font-color);
+  fill: var(--font-color);
 }
 
 .footer-icon {
   width: 20px;
   height: 20px;
-  color: var(--font-color);
+  stroke: var(--font-color);
+  fill: var(--font-color);
 }
 
 a.icon-link {
