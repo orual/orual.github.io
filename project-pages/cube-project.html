@@ -1,0 +1,142 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+     <link rel="icon" href="../assets/images/20240111_215717.jpg" />
+     <title>Neema's Portfolio</title>
+     <meta name="description" content="Work portfolio for Neema.">
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <span class="nav-title">〉cd ../</span>
+
+        <div class="navlinks">
+          <a class="button" href="https://github.com/orual">
+            <image src="../assets/icons/github.svg" class="footer-icon"/>
+            <span class="button-text">GitHub</span>
+          </a>
+          <a class="button" href="mailto:orual.nbc@proton.me">
+            <image src="../assets/icons/mail.svg" class="footer-icon"/>
+            <span class="button-text">Contact</span>
+          </a>
+          </div>
+        
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="portfolio-header">
+        <div id="project-image">
+          <video muted autoplay loop width="250">
+            <source src="../assets/images/20230106_204632.mp4" type="video/mp4" />
+          </video>
+          
+        </div>
+        <div id="project-alt-header-text-container">
+            <div class="header-text">
+              <span class="main-title">Cube</span>
+              <div class="body-text">
+                A tiny box with a screen, a WiFi connection, and some sensors,
+                which allowed it to be a compass, weather station, and clock.
+              </div>
+            </div>
+            <div class="body-text">
+              This was my first foray beyond Arduino, using the C vendor SDK for the ESP32-S2.
+              Ultimately this cemented my distaste for the hobbyist-oriented Arduino platform 
+              and would eventually lead to me writing Rust for microcontroller firmware where possible.
+            </div>
+        </div>
+      </div>
+
+      <!-- PROJECT DETAILS -->
+      <div id="project-details">
+        <div class="subheader-text">Project Details</div>
+        <div class="project-details-content">
+          <div class="body-text">
+            This project was a little lark inspired by a family Secret Santa exchange, which got a bit out of hand. 
+            I wanted to make something interesting for it, and happened to have a very small ESP32-S2 board from Adafruit on hand, 
+            as well as a TFT plus SD card breakout and a six-axis orientation sensor (accelerometer, gyroscope, and magnetometer).
+          </div>
+          <div class="body-text">
+            I attached all the modules together in as compact a space as possible, 
+            with just enough space for a little USB LiPo module and a tiny battery. 
+            I designed and 3D printed a case. It connects to Wifi to get accurate time and weather data, 
+            and depending on which way it is oriented, it displays either a clock, the current weather, 
+            a compass, a random image stored on the SD card, or the accerometer data.
+          </div>
+        </div>
+      </div>
+
+      <!-- IMAGE GALLERY -->
+      <div id="project-gallery">
+        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
+        <div class="subheader-text">Photos</div>
+        <div class="project-gallery-content">
+            <!-- 
+              TODO
+
+              This is where the images in the gallery live. Here's a simple gallery image for you to copy:
+
+              Full Width Image:
+
+                <div class="gallery-image-container">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              Half Width Image: 
+
+                <div class="gallery-image-container half-width">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              - To add an image to the this area, copy one of the above, paste it below this comment, and change the following:
+                  - IMAGE_NAME: the name of the image file in assets/images
+                  - IMAGE_CAPTION: to the caption of the image
+            -->
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/cube/20221224_210204.jpg" class="gallery-image">
+              <span class="image-caption">Another angle of the assembled guts of the cube.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/cube/20230106_105450.jpg" class="gallery-image">
+              <span class="image-caption">The bottom side, showing GPIO output options 
+                as well as 3D-printed buttons which actuate ones on the ESP32-S2</span>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      
+      <a class="icon-link" href="https://github.com/orual">
+        <image src="../assets/icons/github.svg" class="footer-icon"/>
+      </a>
+      <a class="icon-link" href="https://github.com/orual">
+        <image src="../assets/icons/bluesky.svg" class="footer-icon"/>
+      </a>
+      <a class="icon-link" href="mailto:orual.nbc@proton.me">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    
+    </div>
+
+	</body>
+</html>

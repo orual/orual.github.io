@@ -1,0 +1,100 @@
+
+
+<!-- 
+  IMPORTANT! 
+  
+  Keep this file unchanged to use as a template for all future project pages. 
+
+  For every new project you add to your portfolio, make a copy of this file in the
+  'project-pages' folder with a name related to the project.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+     <link rel="icon" href="../assets/images/20240111_215717.jpg" />
+     <title>Neema's Portfolio</title>
+     <meta name="description" content="Work portfolio for Neema.">
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <span class="nav-title">〉cd ../</span>
+
+        <div class="navlinks">
+          <a class="button" href="https://github.com/orual">
+            <image src="../assets/icons/github.svg" class="footer-icon"/>
+            <span class="button-text">GitHub</span>
+          </a>
+          <a class="button" href="mailto:orual.nbc@proton.me">
+            <image src="../assets/icons/mail.svg" class="footer-icon"/>
+            <span class="button-text">Contact</span>
+          </a>
+          </div>
+        
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+        <div class="main-title">Syntholin</div>
+        <div class="body-text">This was one of my first significant projects, and unfortunately I don’t have any photos of it. I took apart V1 years ago, and haven’t gotten round to V2. </div>
+        <image class="project-header-image" src="../assets/images/modulin.png">
+      </div>
+
+      <!-- PROJECT DETAILS -->
+      <div id="project-details">
+        <div class="subheader-text">Project Details / Background</div>
+        <div class="project-details-content">
+          <div class="body-text">I was inspired by Martin of the band Wintergatan (better known for their Marble Machine music video) 
+            and his “Modulin”, a modular synthesizer set up with a ribbon controller which could be held and played something like a violin. 
+            I used a combination of a soft linear potentiometer and a force-sensitive resistor stacked one on top of the other 
+            to make a pressure-sensitive ribbon. 
+          </div>
+          <div class="body-text">
+            I connected this, along with some other inputs, up to an Arduino and processed the data into MIDI note values, 
+            pitch bend, and control change data. I wrote an algorithm to quantize the pitch inputs from the ribbon to either chromatic tones 
+            or a specific scale, while still allowing bending notes and sliding from note to note either smoothly or with a portamento, 
+            in a way reminiscent of the ROLI Seaboard controllers.
+          </div>
+          <div class="body-text">
+            I really do want to have another go at this one some day, take it on again with new eyes 
+            and all the knowledge and experience I've gained since, 
+            I think it has the potential to be a really fun musical instrument and a cool product.
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      
+      <a class="icon-link" href="https://github.com/orual">
+        <image src="../assets/icons/github.svg" class="footer-icon"/>
+      </a>
+      <a class="icon-link" href="https://github.com/orual">
+        <image src="../assets/icons/bluesky.svg" class="footer-icon"/>
+      </a>
+      <a class="icon-link" href="mailto:orual.nbc@proton.me">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    
+    </div>
+
+	</body>
+</html>
