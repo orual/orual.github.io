@@ -1,5 +1,6 @@
 body {
   font-family: 'IBM Plex Sans', sans-serif;
+  color: var(--font-color);
 }
 
 @font-face {
@@ -41,34 +42,41 @@ body {
   font-weight: 500;
   font-size: 24px;
   font-family: 'IBM Plex Mono';
+  color: var(--font-color);
 }
 
 .button-text {
   font-size: 13px;
   font-weight: 700;
   font-family: 'IBM Plex Mono';
+  color: var(--font-color);
 }
 
 .image-caption {
   font-size: 14px;
   font-weight: 500;
+  color: var(--font-color);
 }
 
 .main-title {
   font-size: 40px;
   font-weight: 500;
   font-family: 'Chakra Petch';
+  color: var(--font-color);
 }
 
 .subheader-text {
   font-size: 20px;
   font-weight: 700;
   font-family: 'IBM Plex Mono';
+  color: var(--font-color);
 }
 
 .body-text {
   font-size: 16px;
   font-weight: 500;
+  color: var(--font-color);
+  color: var(--font-color);
 }
 
 .project-card-text {
@@ -78,6 +86,7 @@ body {
   -webkit-line-clamp: 4;
   -line-clamp: 4;
   -webkit-box-orient: vertical;
+  color: var(--font-color);
 }
 
 .project-title {
@@ -88,4 +97,5 @@ body {
   -line-clamp: 1;
   -webkit-box-orient: vertical;
   font-family: 'Chakra Petch';
+  color: var(--font-color);
 }
