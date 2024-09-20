@@ -63,7 +63,7 @@ a.icon-link:hover {
 }
 
 /* Small devices (portrait tablets and large phones, 800px and below) */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   .navbar {
     padding: 20px 20px;
     background-color: var(--bg-color)
