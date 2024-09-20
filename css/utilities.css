@@ -129,7 +129,7 @@ a.no-underline:hover {
     --secondary-color: #818cab;
     --font-color: #e1e1ff;
     --bg-color: #161625;
-    --button-border: #e1e1ff;
+    --button-border: #c3c1f8;
     --heading-color: #818cab;
     color-scheme: light dark;
   }
@@ -146,4 +146,14 @@ a.no-underline:hover {
     --heading-color: #818cab;
     color-scheme: light dark;
   }
+}
+
+:root {
+  --primary-color: #9A97F3;
+  --secondary-color: #818cab;
+  --font-color: black;
+  --bg-color: white;
+  --button-border: #141414;
+  --heading-color: #818cab;
+  color-scheme: light dark;
 }
