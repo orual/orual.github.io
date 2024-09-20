@@ -5,11 +5,13 @@
   width: 16px;
   height: 16px;
   margin-top: 1px;
+  color: var(--font-color);
 }
 
 .footer-icon {
   width: 20px;
   height: 20px;
+  color: var(--font-color);
 }
 
 a.icon-link {
@@ -35,6 +37,7 @@ a.icon-link:hover {
   position: fixed;
   top: 0;
   left: 0;
+  color: var(--font-color);
 }
 
 .navlinks {
