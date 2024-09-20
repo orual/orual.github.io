@@ -145,14 +145,3 @@ a.no-underline:hover {
     color-scheme: light dark;
   }
 }
-
-
-:root {
-  --primary-color: #6a4e8b;
-  --secondary-color: #818cab;
-  --font-color: black;
-  --bg-color: white;
-  --button-border: #141414;
-  --heading-color: #818cab;
-  color-scheme: light dark;
-}
