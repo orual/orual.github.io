@@ -49,7 +49,7 @@ a.icon-link:hover {
 }
 
 .nav-title-link {
-  color: black;
+  color: var(--font-color);
   text-decoration: none;
 }
 
@@ -61,7 +61,7 @@ a.icon-link:hover {
 @media only screen and (max-width: 800px) {
   .navbar {
     padding: 20px 20px;
-    background-color: white
+    background-color: var(--bg-color)
   }
 }
 
@@ -70,10 +70,10 @@ a.icon-link:hover {
 
 a.button {
   padding: 8px 16px;
-  border: 1px dashed #141414;
-  border-bottom: 1px solid #141414;
+  border: 1px dashed var(--button-border);
+  border-bottom: 1px solid var(--button-border);
   /* border-radius: 50px; */
-  color: black;
+  color: var(--font-color);
   text-decoration: none;
   width: fit-content;
   display: flex;
@@ -102,7 +102,7 @@ a.button:hover {
 /* Link Styling */
 a.no-underline {
   text-decoration: none;
-  color: black
+  color: var(--font-color)
 }
 
 a.no-underline:hover {
@@ -115,4 +115,41 @@ a.no-underline:hover {
   #footer {
     padding: 20px 20px;
   }
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Dark theme styles go here */
+  .colorscheme {
+    --primary-color: #9A97F3;
+    --secondary-color: #818cab;
+    --font-color: #e1e1ff;
+    --bg-color: #161625;
+    --button-border: #e1e1ff;
+    --heading-color: #818cab;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  /* Light theme styles go here */
+  .colorscheme {
+    --primary-color: #9A97F3;
+    --secondary-color: #818cab;
+    --font-color: black;
+    --bg-color: white;
+    --button-border: #141414;
+    --heading-color: #818cab;
+    color-scheme: light dark;
+  }
+}
+
+
+
+.colorscheme {
+  --primary-color: #6a4e8b;
+  --secondary-color: #818cab;
+  --font-color: black;
+  --bg-color: white;
+  --button-border: #141414;
+  --heading-color: #818cab;
+  color-scheme: light dark;
 }
