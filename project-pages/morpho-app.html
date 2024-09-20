@@ -14,16 +14,6 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-    <!-- 
-      TODO
-
-      Upload your Unemployable (or whatever photo you like) to the assets/images folder
-      and change the name of the image below to match the uploaded one
-
-      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
-
-      This should be the same across all pages.
-     -->
      <link rel="icon" href="../assets/images/20240111_215717.jpg" />
      <title>Neema's Portfolio</title>
      <meta name="description" content="Work portfolio for Neema.">
@@ -42,8 +32,6 @@
         <span class="nav-title">〉cd ../</span>
 
         <div class="navlinks">
-          
-          <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
 
           <a class="button" href="https://github.com/orual">
             <image src="../assets/icons/github.svg" class="footer-icon"/>
@@ -62,32 +50,64 @@
     <div id="main-content">
 
       <!-- PROJECT HEADER -->
-      <div id="project-header">
-          <!-- 
-            TODO
+      <div id="portfolio-header">
+        <div id="project-image">
+          <img src="../assets/images/morpho/morpho_icon.png" class="portfolio-header-image"
+          alt="The current app icon for mopho, a vector image of the side view of a butterfly, with blue wings">
+        </div>
 
-            - Change the 'main-title' text to the name of your project
-            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
-            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
-          -->
-        <div class="main-title">Project Name</div>
-        <div class="body-text">A small description about the project goes here, get the reader hooked on the project and tell them why they should continue to read this page. Give it a sweet tagline.</div>
-        <image class="project-header-image" src="../assets/images/desktop.jpeg">
+        <div id="project-alt-header-text-container">
+            <div class="header-text">
+              <span class="main-title">Morpho</span>
+              <div class="body-text">A multiplatform mobile and desktop client and support library 
+                for the social network <a href="https://bsky.app/">Bluesky</a> 
+                and the <a href="https://atproto.com/">AT Protocol</a>, written in Kotlin.
+                With help from my friend <a href="https://misha.fm">Misha</a>.
+              </div>
+            </div>
+            <a class="button" href="https://github.com/morpho-app/Morpho">
+              <span class="button-text">〉git clone https://github.com/morpho-app/Morpho.git</span> 
+            </a>
+        </div>
       </div>
 
       <!-- PROJECT DETAILS -->
-      <!-- 
-        TODO
-
-        - Change the 'subheader-text' to whatever header you want for project details
-        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
-      -->
       <div id="project-details">
-        <div class="subheader-text">Project Details / Background</div>
-        <div class="project-details-content">
-          <div class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in fermentum. Sed id semper risus in hendrerit gravida. Placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi blandit cursus risus. Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Vitae congue mauris rhoncus aenean vel elit.</div>
-          <div class="body-text">Vitae justo eget magna fermentum. Imperdiet nulla malesuada pellentesque elit eget gravida. Aliquet nec ullamcorper sit amet. Aliquet sagittis id consectetur purus. Ac tortor dignissim convallis aenean. Enim neque volutpat ac tincidunt vitae. Lobortis feugiat vivamus at augue. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Viverra orci sagittis eu volutpat. Massa tincidunt nunc pulvinar sapien et ligula. Donec enim diam vulputate ut.</div>
-        </div>
+        <div class="subheader-text">Genesis</div>
+        <div id="project-details-column">
+          
+          <div id="project-side-image">
+            <img src="../assets/images/morpho/Screenshot_20240427_180100.png" class="portfolio-side-image"
+            alt="A screenshot of the Morpho Bluesky client running on desktop, 
+            showing the profile page for the project and a post thanking Bluesky for some grant money">
+          </div>
+          <div class="project-details-content-column">
+            <div id="project-alt-header-text-container">
+              
+                <div class="body-text">
+                  This project started a while ago, and development work has been somewhat intermittent due to other time commitments. 
+                  The ultimate reason for it React Native and its issues. This is what the official client for Bluesky is written in, 
+                  the lead front-end developer is very much an Apple guy, and so wasn't aware of changes which needed to be made for Android, 
+                  down to basic things like saving images locally. The performance was not great and there were upstream bugs 
+                  in React Native's Android implementation which the Bluesky developers couldn't do anything about. 
+                </div>
+                <div class="body-text">
+                  Secondarily, the official client did not scale well to larger screens
+                  such as foldable devices or small tablets, having a very low information density at those sizes.
+                  Other clients such as Skyfeed or deck.blue which did work better on larger screens and had an overall higher info density 
+                  had interfaces which were too busy and couldn't scale down either. 
+                  So there was and is a gap in the ecosystem for a client which strikes a good balance.
+                </div>
+                <div class="body-text">
+                  While I had the basics of a Kotlin library which talked to the Bluesky XRPC API from another developer, 
+                  who has since largely abandoned his project, a lot remained to be done both in terms of creating a pleasant 
+                  interface to the social network from Kotlin and in designing and implementing the interface I wanted.
+                  Upon realizing that Google and co had put in significant effort to make a multiplatform version of Jetpack Compose,
+                  and that, while not especially mature, it did work, I decided to brach out and target more platforms
+                </div>
+              </div>
+          </div>
+        </div
       </div>
 
       <!-- IMAGE GALLERY -->

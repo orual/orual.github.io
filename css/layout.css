@@ -60,6 +60,7 @@ body {
 
 
 
+
 /* About Section */
 
 #about-section {
@@ -133,6 +134,31 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+#project-details-column {
+  display: flex;
+  gap: 16px;
+}
+
+
+#project-alt-header-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  flex-basis: 60%;
+}
+
+.portfolio-side-image {
+  width: 100%;
+  height: auto;
+}
+
+.project-details-content-column {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  width: 100%;
 }
 
 .project-details-content {
