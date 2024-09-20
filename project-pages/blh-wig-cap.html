@@ -39,8 +39,7 @@
     <!-- NAVBAR -->
     <div class="navbar">
       <a class="nav-title-link" href="../index.html">
-        <span class="nav-title"><pre>~/portfolio/morpho-app
-〉</pre></span>
+        <span class="nav-title">〉cd ../</span>
 
         <div class="navlinks">
           
@@ -63,19 +62,27 @@
     <div id="main-content">
 
       <!-- PROJECT HEADER -->
-      <div id="project-header">
-          <!-- 
-            TODO
+      <div id="portfolio-header">
+        
+        <div id="project-image">
+          <img src="../assets/images/20240317_130529-cropped.jpg" class="portfolio-header-image">
+        </div>
 
-            - Change the 'main-title' text to the name of your project
-            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
-            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
-          -->
-        <div class="main-title">Project Name</div>
-        <div class="body-text">A small description about the project goes here, get the reader hooked on the project and tell them why they should continue to read this page. Give it a sweet tagline.</div>
-        <image class="project-header-image" src="../assets/images/desktop.jpeg">
+        <div id="project-alt-header-text-container">
+            <div class="header-text">
+              <span class="main-title">BLH Wig Sensor</span>
+              <div class="body-text">
+                Part of a complex, multi-dimensional research project, this device is an advanced, 
+                ultra-low-power wireless electrosensor for health monitoring.
+              </div>
+            </div>
+            <div class="body-text">
+              It is sewn with conductive thread to electrodes made of conductive fabric on the inside of a wig cap,
+              before the hair is attached. Electrodes rest against the scalp or hair, and are used to measure biomarkers.
+              The data is then transmitted over Bluetooth to the wearer's phone.
+            </div>
+        </div>
       </div>
-
       <!-- PROJECT DETAILS -->
       <!-- 
         TODO
@@ -84,10 +91,29 @@
         - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
       -->
       <div id="project-details">
-        <div class="subheader-text">Project Details / Background</div>
+        <div class="subheader-text">Project Details</div>
         <div class="project-details-content">
-          <div class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in fermentum. Sed id semper risus in hendrerit gravida. Placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi blandit cursus risus. Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Vitae congue mauris rhoncus aenean vel elit.</div>
-          <div class="body-text">Vitae justo eget magna fermentum. Imperdiet nulla malesuada pellentesque elit eget gravida. Aliquet nec ullamcorper sit amet. Aliquet sagittis id consectetur purus. Ac tortor dignissim convallis aenean. Enim neque volutpat ac tincidunt vitae. Lobortis feugiat vivamus at augue. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Viverra orci sagittis eu volutpat. Massa tincidunt nunc pulvinar sapien et ligula. Donec enim diam vulputate ut.</div>
+          <div class="body-text">
+            This was another project with my current employer. The client came to us with a very ambitious set of goals, and we delivered.
+            Designing and manufacturing at reasonable cost a prototype sensor unit was challenging. The first revision was entirely flex PCB,
+            however this limited routing density and made the circuit less durable. The second revision, shown above, is a multi-board assembly,
+            composed of two 4-layer rigid PCBs with a flex PCB sandwiched between them to act as both an interposer and board-to-board connector,
+            as well as to contain the NFC and Bluetooth antennas, battery connection, indicator LEDs, and electrode tie points.
+          </div>
+          <div class="body-text">
+            Firmware development was the second challenge. We chose an nRF52840 microcontroller to be the heart of the system,
+            and for the second revision we switched from using its limited internal ADCs to a powerful external analog electrochemical front-end chip.
+            The official nRF SDK uses the Zephyr RTOS, which is extremely powerful and has excellent power-saving features 
+            (necessary on a tiny wearable), but its peripheral driver architecture does not play well with the typical vendor driver.
+            And our analog front-end chip had the typical vendor driver.
+          </div>
+          <div class="body-text">
+            If I were to do this project again, I would almost certainly bite the bullet and rewrite the firmware in Rust.
+            In spite of this also meaning that I would need to port the analog chip's driver not only to a different framework 
+            but to another language entirely, it would also have eliminated a whole class of memory bugs which we experienced in testing
+            on the Zephyr-based C firmware. Zephyr is an incredibly complex system compared to something like Embassy, which 
+            in practice accomplishes many of the same things, sometimes with lower power usage.
+          </div>
         </div>
       </div>
 
@@ -120,16 +146,16 @@
                   - IMAGE_CAPTION: to the caption of the image
             -->
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/code.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+              <img src="../assets/images/blh-wig-sensor/20240112_141446.jpg" class="gallery-image">
+              <span class="image-caption">The original all-flex board revision, with much less advanced sensing capabilities.</span>
             </div>
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/sketchbook.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+              <img src="../assets/images/blh-wig-sensor/20240205_153213.jpg" class="gallery-image">
+              <span class="image-caption">The version 1 cap being made, showing conductive thread electrode patches.</span>
             </div>
             <div class="gallery-image-container">
-              <img src="../assets/images/camera.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+              <img src="../assets/images/blh-wig-sensor/20240327_153717.jpg" class="gallery-image">
+              <span class="image-caption">The version 2 PCB partially sewn into a wig cap.</span>
             </div>
         </div>
       </div>
