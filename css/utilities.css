@@ -1,4 +1,30 @@
 
+@media (prefers-color-scheme: dark) {
+  /* Dark theme styles go here */
+  :root {
+    --primary-color: #9A97F3;
+    --secondary-color: #818cab;
+    --font-color: #e1e1ff;
+    --bg-color: #161625;
+    --button-border: #c3c1f8;
+    --heading-color: #818cab;
+    color-scheme: light dark;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  /* Light theme styles go here */
+  :root {
+    --primary-color: #9A97F3;
+    --secondary-color: #818cab;
+    --font-color: black;
+    --bg-color: white;
+    --button-border: #141414;
+    --heading-color: #818cab;
+    color-scheme: light dark;
+  }
+}
+
 /* Icons */
 
 .right-arrow-icon {
@@ -22,9 +48,8 @@ a.icon-link {
 
 a.icon-link:hover {
   cursor: pointer;
-  stroke-width: 5;
   margin: 0;
-  transform: rotate(15deg);
+  transform: scale(1.5);
 }
 
 
@@ -62,13 +87,7 @@ a.icon-link:hover {
   text-decoration: underline;
 }
 
-/* Small devices (portrait tablets and large phones, 800px and below) */
-@media only screen and (max-width: 1000px) {
-  .navbar {
-    padding: 20px 20px;
-    background-color: var(--bg-color)
-  }
-}
+
 
 /* Small devices (portrait tablets and large phones, 800px and below) */
 @media only screen and (max-width: 1200px) {
@@ -81,12 +100,33 @@ a.icon-link:hover {
 }
 
 /* Small devices (portrait tablets and large phones, 800px and below) */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1100px) {
+  .navbar {
+    padding: 20px 20px;
+    background-color: var(--bg-color);
+  }
+
   .navlinks {
-    padding: 40px 50px 30px 50px;
+    padding: 25px 50px 30px 50px;
     flex-direction: row;
     gap: 16px;
   }
+}
+
+/* Footer Styling */
+
+#footer {
+  width: 100%;
+  display: flex;
+  padding: 30px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Small devices (portrait tablets and large phones, 800px and below) */
+@media only screen and (max-width: 800px) {
+
 
   #footer {
     padding: 20px 20px;
@@ -94,6 +134,9 @@ a.icon-link:hover {
 }
 
 @media only screen and (max-width: 600px) {
+  .navbar {
+    padding: 20px 20px 60px 20px;
+  }
   .navlinks {
     padding: 25px 50px 30px 50px;
     flex-direction: column-reverse;
@@ -131,16 +174,7 @@ a.button:hover {
 }
 
 
-/* Footer Styling */
 
-#footer {
-  width: 100%;
-  display: flex;
-  padding: 30px 50px;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-}
 
 /* Link Styling */
 a.no-underline {
@@ -155,28 +189,3 @@ a.no-underline:hover {
 
 
 
-@media (prefers-color-scheme: dark) {
-  /* Dark theme styles go here */
-  :root {
-    --primary-color: #9A97F3;
-    --secondary-color: #818cab;
-    --font-color: #e1e1ff;
-    --bg-color: #161625;
-    --button-border: #c3c1f8;
-    --heading-color: #818cab;
-    color-scheme: light dark;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  /* Light theme styles go here */
-  :root {
-    --primary-color: #9A97F3;
-    --secondary-color: #818cab;
-    --font-color: black;
-    --bg-color: white;
-    --button-border: #141414;
-    --heading-color: #818cab;
-    color-scheme: light dark;
-  }
-}
