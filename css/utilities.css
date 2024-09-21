@@ -80,7 +80,20 @@ a.icon-link:hover {
   }
 }
 
-@media only screen and (max-width: 500px) {
+/* Small devices (portrait tablets and large phones, 800px and below) */
+@media only screen and (max-width: 800px) {
+  .navlinks {
+    padding: 40px 50px 30px 50px;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  #footer {
+    padding: 20px 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   .navlinks {
     padding: 25px 50px 30px 50px;
     flex-direction: column-reverse;
@@ -140,18 +153,7 @@ a.no-underline:hover {
   cursor: pointer;
 }
 
-/* Small devices (portrait tablets and large phones, 800px and below) */
-@media only screen and (max-width: 800px) {
-  .navlinks {
-    padding: 40px 50px 30px 50px;
-    flex-direction: row;
-    gap: 16px;
-  }
 
-  #footer {
-    padding: 20px 20px;
-  }
-}
 
 @media (prefers-color-scheme: dark) {
   /* Dark theme styles go here */
