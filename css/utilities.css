@@ -32,7 +32,7 @@ a.icon-link:hover {
 
 .navbar {
   width: 100%;
-  padding: 30px 50px;
+  padding: 12px 50px 30px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,7 +43,7 @@ a.icon-link:hover {
 }
 
 .navlinks {
-  padding: 30px 50px;
+  padding: 40px 50px 30px 50px;
   display: flex;
   justify-content: right;
   align-items: center;
@@ -63,13 +63,31 @@ a.icon-link:hover {
 }
 
 /* Small devices (portrait tablets and large phones, 800px and below) */
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1000px) {
   .navbar {
     padding: 20px 20px;
     background-color: var(--bg-color)
   }
 }
 
+/* Small devices (portrait tablets and large phones, 800px and below) */
+@media only screen and (max-width: 1200px) {
+  .navlinks {
+    padding: 25px 50px 30px 50px;
+    flex-direction: column-reverse;
+    align-items: end;
+    gap: 8px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .navlinks {
+    padding: 25px 50px 30px 50px;
+    flex-direction: column-reverse;
+    align-items: end;
+    gap: 8px;
+  }
+}
 
 
 /* Button Styling */
@@ -81,7 +99,7 @@ a.button {
   /* border-radius: 50px; */
   color: var(--font-color);
   text-decoration: none;
-  width: fit-content;
+  width: max-content;
   display: flex;
   gap: 5px;
   align-items: center;
@@ -91,6 +109,12 @@ a.button:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   cursor: pointer;
+}
+
+.multi-link {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 16px;
 }
 
 
@@ -118,6 +142,12 @@ a.no-underline:hover {
 
 /* Small devices (portrait tablets and large phones, 800px and below) */
 @media only screen and (max-width: 800px) {
+  .navlinks {
+    padding: 40px 50px 30px 50px;
+    flex-direction: row;
+    gap: 16px;
+  }
+
   #footer {
     padding: 20px 20px;
   }

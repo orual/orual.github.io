@@ -213,7 +213,7 @@ body {
 /* Extra large devices (large laptops and desktops, 1200px and below) */
 @media only screen and (max-width: 1200px) {
   #main-content {
-    margin: 225px 300px 225px 225px;
+    margin: 225px 175px 225px 225px;
   }
 }
 
@@ -225,35 +225,25 @@ body {
 }
 
 /* Small devices (portrait tablets and large phones, 800px and below) */
-@media only screen and (max-width: 1100px) {
-  #main-content {
-    margin: 150px 50px;
-  }
-
-  .project-card {
-    max-width: calc((100% - 16px) / 2);
-  }
-}
-
-/* Small devices (portrait tablets and large phones, 800px and below) */
 @media only screen and (max-width: 800px) {
   #main-content {
     margin: 150px 50px;
   }
 
-  #portfolio-header {
-    flex-direction: column;
-  }
-
   .project-card {
     max-width: calc((100% - 16px) / 2);
   }
 }
 
+
 /* Small devices (portrait tablets and large phones, 600px and below) */
 @media only screen and (max-width: 600px) {
   #main-content {
     margin: 125px 20px;
+  }
+
+  #portfolio-header {
+    flex-direction: column;
   }
 
   .project-card {
