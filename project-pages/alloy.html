@@ -153,9 +153,9 @@ effect IO {
 
 fn process(input: String) -&gt; String {
   input
-	|&gt; trim()
-	|&gt; to_uppercase()
-	|&gt; add_exclamation()
+   |&gt; trim()
+   |&gt; to_uppercase()
+   |&gt; add_exclamation()
 }
 
 fn main() -&gt; Result[(), Error] with IO {
