@@ -127,6 +127,12 @@
                         <span class="subheader-text">Main Design Components</span>
                     </div>
                     <div class="body-text">
+                        When we stopped, we had implemented a first pass at the lexer, parser, and transpiler. The
+                        initial goal was to get something which could turn the simplest nontrivial Alloy programs into
+                        equivalent Rust code. We were working on type checking and inference, and had made good
+                        progress. This was all done over the course of about two weeks in October 2024. My friend and I
+                        had to put it down to work on other things, then she moved on and I haven't had the time or the
+                        heart to pick it back up again.
                         <ul>
                             <li>
                                 <em>Performance</em>: (hopefully) Zero-cost abstractions and efficient compilation to
@@ -141,33 +147,25 @@
                         </ul>
                         <pre><code>
 effect IO {
-	read_line() -&gt; String
-	print(String)
+  read_line() -&gt; String
+  print(String)
 }
 
 fn process(input: String) -&gt; String {
-	input
-		|&gt; trim()
-		|&gt; to_uppercase()
-		|&gt; add_exclamation()
+  input
+	|&gt; trim()
+	|&gt; to_uppercase()
+	|&gt; add_exclamation()
 }
 
 fn main() -&gt; Result[(), Error] with IO {
-	print(&quot;Enter your name: &quot;)
-	let name = read_line()
-	let processed = process(name)
-	print(&quot;Hello, {processed}!&quot;)
-	Ok(())
+  print(&quot;Enter your name: &quot;)
+  let name = read_line()
+  let processed = process(name)
+  print(&quot;Hello, {processed}!&quot;)
+  Ok(())
 }
                         </code></pre>
-                    </div>
-                    <div class="body-text">
-                        When we stopped, we had implemented a first pass at the lexer, parser, and transpiler. The
-                        initial goal was to get something which could turn the simplest nontrivial Alloy programs into
-                        equivalent Rust code. We were working on type checking and inference, and had made good
-                        progress. This was all done over the course of about two weeks in October 2024. My friend and I
-                        had to put it down to work on other things, then she moved on and I haven't had the time or the
-                        heart to pick it back up again.
                     </div>
                 </div>
             </div>
