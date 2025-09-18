@@ -124,15 +124,15 @@
                 <div class="subheader-text">Project Details</div>
                 <div class="project-details-content">
                     <div class="body-text">
-                        <span class="subheader-text">Main Design Components</span>
-                    </div>
-                    <div class="body-text">
                         When we stopped, we had implemented a first pass at the lexer, parser, and transpiler. The
                         initial goal was to get something which could turn the simplest nontrivial Alloy programs into
                         equivalent Rust code. We were working on type checking and inference, and had made good
                         progress. This was all done over the course of about two weeks in October 2024. My friend and I
                         had to put it down to work on other things, then she moved on and I haven't had the time or the
                         heart to pick it back up again.
+                    </div>
+                    <div class="body-text">
+                        <span class="subheader-text">Main Design Components</span>
                         <ul>
                             <li>
                                 <em>Performance</em>: (hopefully) Zero-cost abstractions and efficient compilation to
@@ -167,6 +167,7 @@ fn main() -&gt; Result[(), Error] with IO {
 }
                         </code></pre>
                     </div>
+                    >
                 </div>
             </div>
         </div>
